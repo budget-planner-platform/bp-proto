@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package get_user.v1;
+
+import "user/v1/user.proto";
+
+message GetUserRequest {
+  string id = 1;
+}
+
+message GetUserResponse {
+  user.v1.User user = 1;
+}

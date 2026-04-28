@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package create_user.v1;
+
+import "user/v1/user.proto";
+
+message CreateUserRequest {
+  string email        = 1;
+  string display_name = 2;
+  string avatar_url   = 3;
+  string currency     = 4;
+  string timezone     = 5;
+}
+
+message CreateUserResponse {
+  user.v1.User user = 1;
+}

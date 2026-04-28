@@ -1,0 +1,10 @@
+version: v2
+modules:
+  - path: .
+    name: buf.build/budget-planner-platform/bp-user
+lint:
+  use:
+    - STANDARD
+breaking:
+  use:
+    - FILE
