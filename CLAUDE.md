@@ -25,8 +25,6 @@ budget-planner-proto/
 │       └── push-bsr.yml
 └── proto/
     └── budgetplanner/
-        ├── auth/v1/
-        │   └── auth.proto
         ├── user/v1/
         │   └── user.proto
         ├── transaction/v1/
@@ -115,7 +113,6 @@ Triggers on push to `main`. Steps:
 
 | Service | RPCs |
 |---------|------|
-| auth | `ValidateToken`, `GetUserInfo` |
 | user | `GetUser`, `CreateUser`, `UpdateUser`, `DeleteUser` |
 | transaction | `CreateTransaction`, `GetTransaction`, `ListTransactions`, `UpdateTransaction`, `DeleteTransaction` |
 | category | `ListCategories`, `CreateCategory`, `UpdateCategory`, `DeleteCategory` |
