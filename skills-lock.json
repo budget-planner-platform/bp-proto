@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "protobuf": {
+      "source": "bufbuild/claude-plugins",
+      "sourceType": "github",
+      "skillPath": "plugins/protobuf/skills/protobuf/SKILL.md",
+      "computedHash": "ab81fda811287aef352fe7e507f2008b76d879e3a5bc153cee0ca30bd5bbef6e"
+    }
+  }
+}
