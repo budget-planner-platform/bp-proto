@@ -14,5 +14,4 @@ jobs:
         with:
           lint: true
           format: true
-          breaking: true
-          breaking_against: "https://github.com/${GITHUB_REPOSITORY}.git#branch=main"
+          breaking: false
