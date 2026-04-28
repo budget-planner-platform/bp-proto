@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package user_service.v1;
+
+import "get_user/v1/get_user.proto";
+import "create_user/v1/create_user.proto";
+import "update_user/v1/update_user.proto";
+import "delete_user/v1/delete_user.proto";
+
+// UserService manages platform users.
+service UserService {
+  // GetUser retrieves a user by ID.
+  rpc GetUser(get_user.v1.GetUserRequest) returns (get_user.v1.GetUserResponse);
+
+  // CreateUser registers a new user.
+  rpc CreateUser(create_user.v1.CreateUserRequest) returns (create_user.v1.CreateUserResponse);
+
+  // UpdateUser modifies an existing user.
+  rpc UpdateUser(update_user.v1.UpdateUserRequest) returns (update_user.v1.UpdateUserResponse);
+
+  // DeleteUser removes a user.
+  rpc DeleteUser(delete_user.v1.DeleteUserRequest) returns (delete_user.v1.DeleteUserResponse);
+}
