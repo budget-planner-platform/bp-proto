@@ -1,6 +1,6 @@
 version: v2
 modules:
-  - path: .
+  - path: proto/user
     name: buf.build/budget-planner-platform/bp-user
 lint:
   use:
